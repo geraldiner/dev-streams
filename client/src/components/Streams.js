@@ -19,11 +19,13 @@ const Streams = () => {
   }, []);
 
   return (
-    <div>
-      {streams.map((streamer) => {
-        return <Stream key={streamer.userId} streamer={streamer} />;
-      })}
-    </div>
+    <section className="container mx-auto">
+      <section className="flex flex-wrap -mx-4">
+        {streams.map((streamer) => {
+          return <Stream key={streamer.userId} streamer={streamer} />;
+        })}
+      </section>
+    </section>
   );
 };
 

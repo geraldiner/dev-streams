@@ -20,7 +20,9 @@ module.exports = {
         userDisplayName: d.userDisplayName,
         language: d.language,
         tagIds: d.tagIds,
-        thumbnailUrl: d.thumbnailUrl,
+        thumbnailUrl: d.thumbnailUrl
+          .replace("{height}", "640")
+          .replace("{width}", "480"),
         streamTitle: d.title,
         viewers: d.viewers,
       };
