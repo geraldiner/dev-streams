@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon server",
+    "start": "cross-env NODE_ENV=production node server/server.js",
     "client": "npm start --prefix client",
     "both": "concurrently \"npm run dev\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd client && npm install --production && npm build"
