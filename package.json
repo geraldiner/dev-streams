@@ -1,0 +1,35 @@
+{
+  "name": "dev-streams",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon server",
+    "client": "npm start --prefix client",
+    "both": "concurrently \"npm run dev\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geraldiner/dev-streams.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geraldiner/dev-streams/issues"
+  },
+  "homepage": "https://github.com/geraldiner/dev-streams#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "twitch": "^4.6.0",
+    "twitch-auth": "^4.6.0"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7"
+  }
+}
