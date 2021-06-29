@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon server",
     "client": "npm start --prefix client",
-    "both": "concurrently \"npm run dev\" \"npm run client\""
+    "both": "concurrently \"npm run dev\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd client && npm install --production && npm build"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/geraldiner/dev-streams#readme",
   "dependencies": {
+    "axios": "^0.21.1",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "twitch": "^4.6.0",
