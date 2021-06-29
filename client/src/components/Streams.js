@@ -6,7 +6,7 @@ const Streams = () => {
   const STREAMS_URI =
     process.env.NODE_ENV !== "production"
       ? "http://localhost:8888/streams"
-      : "https://dev-streams.herokuapp.com/movies";
+      : "https://dev-streams.herokuapp.com/streams";
   const [streams, setStreams] = useState([]);
 
   useEffect(() => {
