@@ -31,6 +31,10 @@ if (process.env.NODE_ENV === "development") {
 
 app.set("trust proxy", 1);
 
+app.use("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "../../client/build/index.html"));
+});
+
 app.use("/streams", async (req, res) => {
   const resp = await twitch.helix.streams.getStreams({
     game: twitchInfo.gameIds["Science & Technology"],
@@ -54,8 +58,8 @@ app.use("/streams", async (req, res) => {
   return res.status(200).send(JSON.stringify(streams));
 });
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "client/build", "index.html"));
+app.get("*", (request, response) => {
+  response.sendFile(path.join(__dirname, "client/build", "index.html"));
 });
 
 app.listen(
