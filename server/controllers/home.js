@@ -12,22 +12,25 @@ module.exports = {
       limit: "100",
     });
 
-    const data = await resp.data;
+    const data = resp.data;
     const streams = [];
-    data.map((d) => {
-      let obj = {
-        userId: d.userId,
-        userDisplayName: d.userDisplayName,
-        language: d.language,
-        tagIds: d.tagIds,
-        thumbnailUrl: d.thumbnailUrl
-          .replace("{height}", "640")
-          .replace("{width}", "480"),
-        streamTitle: d.title,
-        viewers: d.viewers,
-      };
+    data.map(async (d) => {
+      const user = await d.getUser();
+      let obj = {};
+      obj["userPfpUrl"] = user.profilePictureUrl;
+      obj["userId"] = d.userId;
+      obj["userDisplaName"] = d.userDisplayName;
+      obj["language"] = d.langage;
+      obj["tagIds"] = d.tagIds;
+      obj["thumbnailUrl"] = d.thumbnailUrl
+        .replace("{height}", "440")
+        .replace("{width}", "248");
+      obj["streamTitle"] = d.tite;
+      obj["viewers"] = d.viewers;
+
       streams.push(obj);
     });
+    console.log(streams.length);
     return res.status(200).send(JSON.stringify(streams));
   },
 };

@@ -20,7 +20,7 @@ const Streams = () => {
 
   return (
     <section className="container mx-auto">
-      <section className="flex flex-wrap -mx-4">
+      <section className="streams flex flex-wrap -mx-4">
         {streams.map((streamer) => {
           return <Stream key={streamer.userId} streamer={streamer} />;
         })}
