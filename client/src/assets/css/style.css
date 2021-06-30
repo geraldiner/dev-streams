@@ -1,0 +1,13 @@
+a {
+  color: #9145ff;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: initial;
+}
+
+.stream:hover {
+  transform: translate(10px, -10px);
+  box-shadow: -10px 10px #9145ff;
+}
