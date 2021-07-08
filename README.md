@@ -4,21 +4,23 @@ A curated list of streams featuring live coding and development
 
 **Link to project:** https://dev-streams.herokuapp.com
 
+![Dev Streams preivew](https://i.imgur.com/Z5BsrL9.gif)
+
 ## How It's Made:
 
-**Tech used:** HTML, CSS, JavaScript, React, Twitch API (twitch & twitch-auth npm modules)
+**Tech used:** HTML, CSS, TailwindCSS, JavaScript, React, Twitch API (`twitch` & `twitch-auth` npm modules)
 
-<!-- Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write _something_. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold.
+This project displays a list of Twitch streams that feature live coding and programming (particularly related to my personal interests). It's built from `create-react-app` and uses the `twitch` and `twitch-auth` npm modules to use the [Twitch API](https://dev.twitch.tv/). I also used TailwindCSS for styling, trying to mimic the Twitch UI.
 
 ## Optimizations
 
-_(optional)_
+Setting up the authentication for Twitch was a beast and slowed me down the most. Thankfully I found the npm modules created by [d-fischer](https://d-fischer.github.io/twitch/).
 
-You don't have to include this section but interviewers _love_ that you can not only deliver a final product that looks great but also functions efficiently. Did you write something then refactor it later and the result was 5x faster than the original implementation? Did you cache your assets? Things that you write in this section are **GREAT** to bring up in interviews and you can use this section as reference when studying for technical interviews!
+Moving forward, I think it would be nice to add some functionality for more filtering, especially for English channels.
 
 ## Lessons Learned:
 
-No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those _whoa this is awesome_ or _fuck yeah I did it!_ moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing. -->
+This was a lot of fun to build. As I go through my learning journey, it's been really helpful to talk to other developers and watch them build stuff too. The "Science and Technology" category on Twitch has some channels that aren't really coding-related, so being able to do this makes my search easier.
 
 ## Other Projects
 
