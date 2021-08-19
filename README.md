@@ -4,7 +4,9 @@ A curated list of streams featuring live coding and development
 
 **Link to project:** https://dev-streams.herokuapp.com
 
-![Dev Streams page preview](i.imgur.com/Z5BsrL9.gif)
+<div align="center">
+  <a href="https://i.imgur.com/Z5BsrL9.gif"><img src="https://i.imgur.com/Z5BsrL9.gif" alt="Dev Streams preview" /></a> 
+</div>
 
 ## How It's Made:
 
