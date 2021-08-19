@@ -4,10 +4,6 @@ A curated list of streams featuring live coding and development
 
 **Link to project:** https://dev-streams.herokuapp.com
 
-<div align="center">
-  <a href="https://i.imgur.com/Z5BsrL9.gif"><img src="https://imgur.com/Z5BsrL9.gif" alt="Dev Streams preview" /></a> 
-</div>
-
 ## How It's Made:
 
 **Tech used:** HTML, CSS, TailwindCSS, JavaScript, React, Twitch API (`twitch` & `twitch-auth` npm modules)
