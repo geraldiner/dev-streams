@@ -24,8 +24,6 @@ This was a lot of fun to build. As I go through my learning journey, it's been r
 
 Check out other stuff I've worked on:
 
-**Where's the Magic?:** https://github.com/geraldiner/magical-movies
-
-**Habit Reset:** https://github.com/geraldiner/habit-reset
+**Interactive Piano:** https://github.com/geraldiner/piano
 
 **ACNH Quotes:** https://github.com/geraldiner/acnh-quotes
