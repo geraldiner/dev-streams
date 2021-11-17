@@ -1,10 +1,10 @@
 # Dev Streams
 
-A curated list of streams featuring live coding and development
+A curated list of streams featuring live coding and development. This was mostly just a test in accessing the new version of the Twitch API.
 
 **Link to project:** https://dev-streams.herokuapp.com
 
-## How It's Made:
+## How It's Made
 
 **Tech used:** HTML, CSS, TailwindCSS, JavaScript, React, Twitch API (`twitch` & `twitch-auth` npm modules)
 
@@ -16,7 +16,7 @@ Setting up the authentication for Twitch was a beast and slowed me down the most
 
 Moving forward, I think it would be nice to add some functionality for more filtering, especially for English channels.
 
-## Lessons Learned:
+## Lessons Learned
 
 This was a lot of fun to build. As I go through my learning journey, it's been really helpful to talk to other developers and watch them build stuff too. The "Science and Technology" category on Twitch has some channels that aren't really coding-related, so being able to do this makes my search easier.
 
