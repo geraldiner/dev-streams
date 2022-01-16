@@ -2,7 +2,11 @@
 
 A curated list of streams featuring live coding and development. This was mostly just a test in accessing the new version of the Twitch API.
 
-**Link to project:** https://dev-streams.herokuapp.com
+**Update January 15, 2022:**
+
+This project is no longer maintained or online. If you have any questions, please reach out to me directly!
+
+~~**Link to project:** dev-streams.herokuapp.com~~
 
 ## How It's Made
 
@@ -19,14 +23,6 @@ Moving forward, I think it would be nice to add some functionality for more filt
 ## Lessons Learned
 
 This was a lot of fun to build. As I go through my learning journey, it's been really helpful to talk to other developers and watch them build stuff too. The "Science and Technology" category on Twitch has some channels that aren't really coding-related, so being able to do this makes my search easier.
-
-
-
-
-
-
-
-
 
 ## Other Projects
 

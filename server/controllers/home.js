@@ -1,5 +1,4 @@
 const path = require("path");
-const { tagIds } = require("../util/twitch");
 const twitch = require("../util/twitch_api")();
 const twitchInfo = require("../util/twitch");
 
@@ -16,28 +15,18 @@ module.exports = {
     const data = await resp.data;
     const streams = [];
     data.map((d) => {
-      let temp;
-      d.tagIds.forEach((tagId) => {
-        if (Object.values(twitchInfo.tagIds).includes(tagId)) {
-          if (!temp) {
-            temp = d;
-          }
-        }
-      });
-      if (temp) {
-        let obj = {
-          userId: d.userId,
-          userDisplayName: d.userDisplayName,
-          language: d.language,
-          tags: d.tagIds.map((tagId) => twitchInfo.tagIdNames[tagId]),
-          thumbnailUrl: d.thumbnailUrl
-            .replace("{height}", "420")
-            .replace("{width}", "248"),
-          streamTitle: d.title,
-          viewers: d.viewers,
-        };
-        streams.push(obj);
-      }
+      let obj = {
+        userId: d.userId,
+        userDisplayName: d.userDisplayName,
+        language: d.language,
+        tagIds: d.tagIds,
+        thumbnailUrl: d.thumbnailUrl
+          .replace("{height}", "440")
+          .replace("{width}", "248"),
+        streamTitle: d.title,
+        viewers: d.viewers,
+      };
+      streams.push(obj);
     });
     return res.status(200).send(JSON.stringify(streams));
   },
