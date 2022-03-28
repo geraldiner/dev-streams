@@ -24,6 +24,7 @@ Moving forward, I think it would be nice to add some functionality for more filt
 
 This was a lot of fun to build. As I go through my learning journey, it's been really helpful to talk to other developers and watch them build stuff too. The "Science and Technology" category on Twitch has some channels that aren't really coding-related, so being able to do this makes my search easier.
 
+
 ## Other Projects
 
 Check out other stuff I've worked on:
@@ -46,4 +47,4 @@ Let's talk about self-taught programming, experience design, (computer science) 
 
 **Email**: hello [at] geraldiner [dot] com
 
-I'm also looking for new Full-Stack or Front-End opportunities, so please reach out if you'd like to work together!
+Currently working full-time at <a target="_blank" href="https://nomnomnow.com">Nom Nom</a>, but always open to any cool, interesting projects!
