@@ -25,6 +25,7 @@ Moving forward, I think it would be nice to add some functionality for more filt
 This was a lot of fun to build. As I go through my learning journey, it's been really helpful to talk to other developers and watch them build stuff too. The "Science and Technology" category on Twitch has some channels that aren't really coding-related, so being able to do this makes my search easier.
 
 
+
 ## Other Projects
 
 Check out other stuff I've worked on:
